@@ -1,0 +1,45 @@
+{
+  "name": "standout",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "loadhtml": "pug views/*.pug --pretty --out dist",
+    "loadsass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/main.css",
+    "loadtherest": "cp -R public/* dist && cp public/images/favicon.ico dist/",
+    "prebuild": "npm run clean",
+    "build:markup": "npm run loadhtml",
+    "build:therest": "npm run loadtherest",
+    "build:styles": "npm run loadsass",
+    "build": "npm run build:styles && npm run build:therest && npm run build:markup -s",
+    "deploy:dev": "s3-cli sync ./dist/ s3://development/",
+    "deploy:www": "s3-cli sync ./dist/ s3://production/",
+    "deploy": "npm run deploy:dev && npm run deploy:www",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0",
+    "pug": "2.0.0-beta11"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/usefulcoin/express-pixelarity-standout-initialization",
+  "author": "munair <munair@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefulcoin/express-pixelarity-standout-initialization.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usefulcoin/express-pixelarity-standout-initialization/issues"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "s3-cli": "^0.13.0"
+  }
+}
