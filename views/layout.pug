@@ -1,7 +1,16 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+  include includes/head.pug
+  body.is-preload
+    //  Page wrapper 
+    #page-wrapper
+      include includes/header.pug
+      include includes/nav.pug
+      include includes/banner.pug
+      block presentation
+      block main
+      block video
+      block appeal
+      include includes/footer.pug
+      include includes/copyright.pug
+    include includes/scripts.pug

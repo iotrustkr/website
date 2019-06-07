@@ -72,12 +72,12 @@
 				.icon {
 					&:before {
 						@if $p == 'invert' {
-							background: _palette($p, bg);
-							color: _palette($p, fg-bold);
-						}
-						@else {
 							background: _palette(invert, bg);
 							color: _palette(invert, fg-bold);
+						}
+						@else {
+							background: _palette($p, bg);
+							color: _palette($p, fg-bold);
 						}
 					}
 				}

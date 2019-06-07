@@ -1,6 +1,13 @@
-extends layout
-
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+extends layout.pug
+block main
+  //  Main
+  section#main.wrapper
+    .inner
+      .content
+        header
+          h1= message
+          h2= error.status
+        p #{error.stack}
+        ul.actions
+          li
+            a.button.next(href='index.html') Home Page

@@ -1786,8 +1786,8 @@ ul.contact-icons {
           padding-top: 2.5rem; } }
 
 ul.contact-icons li .icon:before {
-  background: #000000;
-  color: #ffffff; }
+  background: #ffffff;
+  color: #000000; }
 
 /* Section/Article */
 section.special, article.special {

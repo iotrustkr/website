@@ -1,80 +1,24 @@
-doctype html
-html
-  head
-    title IoTrust
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width,initial-scale=1,user-scalable=no')
-    link(rel='stylesheet' href='stylesheets/main.css')
-  body.is-preload
-    //  Page wrapper 
-    #page-wrapper
-      //  Header 
-      header#header.alt
-        span.logo
-          a(href='index.html')
-            | IOTRUST 
-            span D'CENT Wallets
-        a(href='#menu')
-          span Menu
-      //  Nav 
-      nav#menu
-        .inner
-          h2 Menu
-          ul.links
-            li
-              a(href='index.html') Home
-            li
-              a(href='about.html') About
-            li
-              a(href='products.html') Products
-            li
-              a(href='download.html') Download
-          a.close
-            span Close
-      //  Banner 
-      section#banner
-        .inner
-          h1 D'CENT Biometric Wallet
-          .content
-            p A new generation of über convenient cold storage tools that take the worry out of managing digital asset wealth.
-            ul.actions.special
-              li
-                a.button.large.next(href='https://dcentwallet.com') Buy Now
-      //  Footer 
-      section#footer.wrapper
-        .inner
-          .split
-            .content
-              header
-                h2 About
-              p The D’CENT Biometric Wallet is the world's first and only certified biometric hardware wallet. We bring peace of mind to the cryptocurrency world. Our biometrically-powered cold storage solution literally puts the management of precious digital assets at your fingertips.
-              ul.actions
-                li
-                  a.button.next(href='about.html') Learn More
-            ul.contact-icons
-              li
-                a.icon.alt.fa-twitter(href='https://twitter.com/iotrustkr')
-                  span.label twitter.com/iotrustkr
-              li
-                a.icon.alt.fa-facebook(href='https://www.facebook.com/iotrustkr/')
-                  span.label facebook.com/iotrustsecure
-              li
-                a.icon.alt.fa-instagram(href='https://www.instagram.com/iotrustkr/')
-                  span.label instagram.com/iotrust
-              li
-                a.icon.alt.fa-envelope(href='mailto:info@iotrust.kr')
-                  span.label info@iotrust.kr
-      //  Copyright 
-      section.wrapper.style2.copyright
-        .inner.
-          
-          Copyright 2019 © IoTrust Company Limited (Korea). All rights reserved.
-          
-    //  Scripts 
-    script(src='javascripts/jquery.min.js')
-    script(src='javascripts/jquery.scrollex.min.js')
-    script(src='javascripts/jquery.scrolly.min.js')
-    script(src='javascripts/browser.min.js')
-    script(src='javascripts/breakpoints.min.js')
-    script(src='javascripts/util.js')
-    script(src='javascripts/main.js')
+extends layout.pug
+block presentation
+  //  Presentation
+  section#presentation.wrapper
+    .inner
+      .split
+        .content
+          header
+            h2 Cold Storage Simplified
+          p Cold storage solutions prevent unauthorized network access to your digital assets. Removing the constant threat that came with an Internet connection also meant removing convenience. 
+          p Our Biometric Wallet is changing that. The D'CENT Biometric Wallet is the world's first über convenient cold storage solution.
+        img.left#biometric-wallet-profile(src="images/dcent-biometric-wallet-in-perspective-1000x1000px.jpg" width="300px" height="300px" alt="D'CENT Biometric Wallet")
+block main
+  //  Main
+  section#main.wrapper
+    .inner
+      .content
+        header
+          h2 Certified Secure
+        p Our easy-to-use hardware wallets are never directly exposed to the Internet. D’CENT Wallets use certified EAL5+ Secure Element (SE) technology to securely store sensitive information and mitigate network threats. All operations in D’CENT Wallets are safely executed in our Secure OS.
+        p The D'CENT Biometric Wallet turns the initiation of a transaction into a trivial flick of an authenticated finger.
+        ul.actions
+          li
+            a.button.next(href='about.html') Learn More
