@@ -8,6 +8,14 @@ var sassMiddleware = require('node-sass-middleware');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var aboutRouter = require('./routes/about');
+var productsRouter = require('./routes/products');
+var downloadRouter = require('./routes/download');
+var assetsRouter = require('./routes/assets');
+
+var genericRouter = require('./routes/generic');
+var elementsRouter = require('./routes/elements');
+
 var app = express();
 
 // view engine setup
@@ -21,13 +29,22 @@ app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  indentedSyntax: true, // true = .sass and false = .scss
+  indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.use('/index.html', indexRouter);
+app.use('/about.html', aboutRouter);
+app.use('/products.html', productsRouter);
+app.use('/download.html', downloadRouter);
+app.use('/assets.html', assetsRouter);
+
+app.use('/generic.html', genericRouter);
+app.use('/elements.html', elementsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
