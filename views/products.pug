@@ -1,0 +1,20 @@
+extends generic.pug
+block splash
+  //  Splash
+  section#splash.wrapper.style2
+    .inner
+      header.major.special
+        h2 D'CENT Wallets
+        p Biometric and NFC-powered Hardware Wallets
+block main
+  //  Main
+  section#main.wrapper
+    .inner
+      .content
+        header
+          h2 Certified Secure
+        p Our easy-to-use hardware wallets are never directly exposed to the Internet. D’CENT Wallets use certified EAL5+ Secure Element (SE) technology to securely store sensitive information and mitigate network threats. All operations in D’CENT Wallets are safely executed in our Secure OS.
+  //  Video
+  video(autplay, muted, loop, id='dcent-biometric-wallet-video')
+    source(src='images/dcent-biometric-wallet.mp4', type='video/mp4')
+    |   Your browser does not support the video tag.

@@ -1,0 +1,13 @@
+doctype html
+html
+  include includes/head.pug
+  body.is-preload
+    //  Page wrapper
+    #page-wrapper
+      include includes/header.pug
+      include includes/nav.pug
+      block splash
+      block main
+      include includes/footer.pug
+      include includes/copyright.pug
+    include includes/scripts.pug
