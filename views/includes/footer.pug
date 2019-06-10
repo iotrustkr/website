@@ -11,9 +11,9 @@ section#footer.wrapper
           form#mc-embedded-subscribe-form.validate(action='https://iotrusrt.us20.list-manage.com/subscribe/post?u=e49b2871df6358e2ada84541c&id=3d2cf843c4', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
             #mc_embed_signup_scroll.row.gtr-uniform
               .mc-field-group.col-6.col-12-xsmall
-                input#mce-EMAIL.required.email(type='email', value='email@address.com', name='EMAIL')
+                input#mce-EMAIL.required.email(type='email', placeholder='email@address.com', name='EMAIL')
               .mc-field-group.col-6.col-12-xsmall
-                input#mc-embedded-subscribe.primary.button(type='submit', value='Subscribe To Our Newsletter', name='subscribe')
+                input#mc-embedded-subscribe.primary.fit.button(type='submit', value='Subscribe To Our Newsletter', name='subscribe')
               #mce-responses.clear
                 #mce-error-response.response(style='display:none')
                 #mce-success-response.response(style='display:none')
@@ -22,14 +22,34 @@ section#footer.wrapper
         // End mc_embed_signup
       ul.contact-icons
         li
-          a.icon.alt.fa-twitter(href='https://twitter.com/iotrustkr')
-            span.label twitter.com/iotrustkr
+          a.icon.alt.row#twitter-connect(href='https://twitter.com/iotrustkr')
+            .col-4
+              span.icon.fa-stack.fa-2x
+                i.far.fa-circle.fa-stack-2x
+                i.fab.fa-twitter.fa-stack-1x
+            .col-8
+              sub.label twitter.com/iotrustkr
         li
-          a.icon.alt.fa-facebook(href='https://www.facebook.com/iotrustkr')
-            span.label facebook.com/iotrustkr
+          a.icon.alt.row#facebook-connect(href='https://facebook.com/iotrustkr')
+            .col-4
+              span.icon.fa-stack.fa-2x
+                i.far.fa-circle.fa-stack-2x
+                i.fab.fa-facebook.fa-stack-1x
+            .col-8
+              sub.label facebook.com/iotrustkr
         li
-          a.icon.alt.fa-instagram(href='https://www.instagram.com/iotrustkr')
-            span.label instagram.com/iotrustkr
+          a.icon.alt.row#instagram-connect(href='https://instagram.com/iotrustkr')
+            .col-4
+              span.icon.fa-stack.fa-2x
+                i.far.fa-circle.fa-stack-2x
+                i.fab.fa-instagram.fa-stack-1x
+            .col-8
+              sub.label instagram.com/iotrustkr
         li
-          a.icon.alt.fa-envelope(href='mailto:info@iotrust.kr')
-            span.label info@iotrust.kr
+          a.icon.alt.row#email-connect(href='mailto:info@iotrust.kr')
+            .col-4
+              span.icon.fa-stack.fa-2x
+                i.far.fa-circle.fa-stack-2x
+                i.fas.fa-envelope.fa-stack-1x
+            .col-8
+              sub.label info@iotrust.kr

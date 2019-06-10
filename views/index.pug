@@ -1,7 +1,7 @@
 extends layout.pug
-block presentation
-  //  Presentation
-  section#presentation.wrapper
+block main
+  //  Main
+  section#main.wrapper
     .inner
       .split
         .content
@@ -9,16 +9,41 @@ block presentation
             h2 Cold Storage Simplified
           p Cold storage solutions prevent unauthorized network access to your digital assets. Removing the constant threat that came with an Internet connection also meant removing convenience. 
           p Our Biometric Wallet is changing that. The D'CENT Biometric Wallet is the world's first über convenient cold storage solution.
-        img.left#biometric-wallet-profile(src="images/dcent-biometric-wallet-in-perspective-1000x1000px.jpg" width="200px" height="200px" alt="D'CENT Biometric Wallet")
-block main
-  //  Main
-  section#main.wrapper
-    .inner
-      .content
-        header
-          h2 Certified Secure
-        p Our easy-to-use hardware wallets are never directly exposed to the Internet. D’CENT Wallets use certified EAL5+ Secure Element (SE) technology to securely store sensitive information and mitigate network threats. All operations in D’CENT Wallets are safely executed in our Secure OS.
-        p The D'CENT Biometric Wallet turns the initiation of a transaction into a trivial flick of an authenticated finger.
-        ul.actions
-          li
-            a.button.next(href='about.html') Learn More
+          p Our easy-to-use hardware wallets are never directly exposed to the Internet. D’CENT Wallets use certified EAL5+ Secure Element (SE) technology to securely store sensitive information and mitigate network threats. All operations in D’CENT Wallets are safely executed in our Secure OS.
+        .box.alt
+          .row#wallet-display
+            .col-2
+            .col-8
+              span.image.fit(style='margin-top:4rem')
+                img(src='images/iotrust-biometric-wallet-displayed-564x840px.png' alt='Biometric Wallet')
+            .col-2
+      .box.alt
+        .row#features
+          .col-1.col-2-medium.col-3-xsmall
+            span.icon.fa-stack.fa-2x
+              i.far.fa-circle.fa-stack-2x
+              i.fas.fa-award.fa-stack-1x
+          .col-2.col-4-medium.col-9-xsmall
+            sub EAL5+ Certified Secure Element
+          .col-1.col-2-medium.col-3-xsmall
+            span.icon.fa-stack.fa-2x
+              i.far.fa-circle.fa-stack-2x
+              i.fas.fa-fingerprint.fa-stack-1x
+          .col-2.col-4-medium.col-9-xsmall
+            sub Biometric Authentication
+          .col-1.col-2-medium.col-3-xsmall
+            span.icon.fa-stack.fa-2x
+              i.far.fa-circle.fa-stack-2x
+              i.fab.fa-bluetooth.fa-stack-1x
+          .col-2.col-4-medium.col-9-xsmall
+            sub Bluetooth Low Energy
+          .col-1.col-2-medium.col-3-xsmall
+            span.icon.fa-stack.fa-2x
+              i.far.fa-circle.fa-stack-2x
+              i.fas.fa-eye.fa-stack-1x
+          .col-2.col-4-medium.col-9-xsmall
+            sub OLED Display
+      p The D'CENT Biometric Wallet turns the initiation of a transaction into a trivial flick of an authenticated finger.
+      ul.actions
+        li
+          a.button.next(href='products.html') Learn More
