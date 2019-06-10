@@ -86,6 +86,8 @@
 
 // Custom.
 
+        #dcent-biometric-wallet-diplay-image { margin-top:4rem; }
+        #dcent-biometric-wallet-features { color: transparentize(desaturate(darken(_palette(bg-alt), 10), 5), 0.1); }
 	#dcent-biometric-wallet-video {
 		position: fixed;
 		right: 0;

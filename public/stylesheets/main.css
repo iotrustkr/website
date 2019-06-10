@@ -2986,4 +2986,18 @@ body.is-menu-visible #menu {
 
 /* Footer */
 .copyright {
+  color: rgba(255, 255, 255, 0.75);
   text-align: center; }
+
+#dcent-biometric-wallet-diplay-image {
+  margin-top: 4rem; }
+
+#dcent-biometric-wallet-features {
+  color: rgba(218, 67, 21, 0.9); }
+
+#dcent-biometric-wallet-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
