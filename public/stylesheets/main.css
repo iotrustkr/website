@@ -2994,10 +2994,16 @@ body.is-menu-visible #menu {
 
 #dcent-biometric-wallet-features {
   color: rgba(218, 67, 21, 0.9); }
+  @media screen and (max-width: 736px) {
+    #dcent-biometric-wallet-features {
+      display: none; } }
 
-#dcent-biometric-wallet-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%; }
+#team-heading {
+  display: none; }
+  @media screen and (max-width: 736px) {
+    #team-heading {
+      display: block; } }
+
+@media screen and (max-width: 736px) {
+  #iotrust-team {
+    display: none; } }

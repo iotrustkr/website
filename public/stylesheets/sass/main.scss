@@ -87,11 +87,20 @@
 // Custom.
 
         #dcent-biometric-wallet-diplay-image { margin-top:4rem; }
-        #dcent-biometric-wallet-features { color: transparentize(desaturate(darken(_palette(bg-alt), 10), 5), 0.1); }
-	#dcent-biometric-wallet-video {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		min-width: 100%; 
-		min-height: 100%;
+        #dcent-biometric-wallet-features { 
+		color: transparentize(desaturate(darken(_palette(bg-alt), 10), 5), 0.1); 
+                @include breakpoint('<=small') {
+                        display: none;
+                }
+	}
+	#team-heading {
+                display: none;
+                @include breakpoint('<=small') {
+                	display: block;
+                }
+        }
+	#iotrust-team {
+                @include breakpoint('<=small') {
+                        display: none;
+                }
         }
