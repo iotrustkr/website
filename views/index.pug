@@ -1,7 +1,7 @@
 extends layout.pug
-block main
-  //  Main
-  section#main.wrapper
+block introduction
+  //  Introduction
+  section#introduction.wrapper
     .inner
       .split
         .content
@@ -40,7 +40,7 @@ block main
           .col-1.col-2-medium.col-3-xsmall
             span.icon.fa-stack.fa-2x
               i.far.fa-circle.fa-stack-2x
-              i.fab.fa-bluetooth.fa-stack-1x
+              i.fab.fa-bluetooth-b.fa-stack-1x
           .col-2.col-4-medium.col-9-xsmall
             .row
               sub Bluetooth
@@ -58,4 +58,30 @@ block main
       p The D'CENT Biometric Wallet turns the initiation of a transaction into a trivial flick of an authenticated finger.
       ul.actions
         li
-          a.button.next(href='products.html') Learn More
+          a.button.next(href='https://dcentwallet.com/overview/specification.html') Learn More
+block download
+  //  Download
+  section#download.wrapper.style2
+    .inner
+      .split
+        .content
+          header
+            h2 Mobile Apps
+          p We've focused on developing iOS and Android mobile apps for those that want to securely manage their digital assets on the go.
+          ul.actions.fit
+            li
+              a.button.fab.fa-google-play.fit(href='https://play.google.com/store/apps/details?id=com.kr.iotrust.dcent.wallet') Android App
+            li
+              a.button.fab.fa-apple.fit(href='https://itunes.apple.com/kr/app/dcent-hardware-wallet/id1447206611?mt=8') iOS App
+        a(href='#').image.fit
+          img(src='images/dcent-wallet-mobile-app-display.png' style='padding-top:4rem' alt)
+block team
+  //  Team
+  section#team.wrapper
+    .inner
+      a(href='https://medium.com/iotrust/introducing-io-trust-16c536c6a65c').image.main#iotrust-team
+        img(src='images/iotrust-team.png' alt)
+      h2#team-heading IoTrust
+      p IoTrust Company (Korea) Limited was founded in January 2017. We are venture capital funded. Jiran Security and Korea Investment Partners, Korea’s premier venture capital group, identified the potential for growth in the market for hardware wallets and were willing to place their bets on us.
+      p We are security specialists. Our team boasts an average of 17+ years of relevant experience in the security domain.
+      p Our security experts leverage highly-specialized knowledge of Secure Element (SE) and Trusted Execution Environment (TEE) technologies to make hardware wallets easier to use.
