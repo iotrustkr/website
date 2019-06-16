@@ -12,7 +12,7 @@
     "build:therest": "npm run loadtherest",
     "build:styles": "npm run loadsass",
     "build": "npm run build:styles && npm run build:therest && npm run build:markup -s",
-    "deploy:dev": "s3-cli sync ./dist/ s3://development/",
+    "deploy:dev": "s3-cli sync ./dist/ s3://iotrust-development/",
     "deploy:www": "s3-cli sync ./dist/ s3://production/",
     "deploy": "npm run deploy:dev && npm run deploy:www",
     "start": "node ./bin/www",
