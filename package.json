@@ -6,7 +6,7 @@
     "clean": "rm -rf dist/*",
     "loadhtml": "pug views/*.pug --pretty --out dist",
     "loadsass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/main.css",
-    "loadtherest": "cp -R public/* dist && cp public/images/favicon.ico dist/",
+    "loadtherest": "cp -R public/* dist && cp public/images/favicon.ico dist/ && cp .gitignore dist/",
     "prebuild": "npm run clean",
     "build:markup": "npm run loadhtml",
     "build:therest": "npm run loadtherest",
